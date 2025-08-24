@@ -1,0 +1,38 @@
+name: emerging_public_health_nlp
+channels:
+    - conda-forge
+    - pytorch
+    - nvidia
+dependencies:
+
+    - python=3.10
+    # This is what the desired medspacy needs at the moment
+    - spacy>=3.4.1,<4.0
+    - spacy-model-en_core_web_sm
+    - jupyter
+    - nb_conda_kernels
+    - pandas
+    - pyodbc
+    - sqlalchemy
+    - numpy
+    - scipy
+    - scikit-learn
+    - pytest
+    # This is the CUDA for the stable pytorch as of 8/2022 (i.e. 1.6.0)
+    # https://pytorch.org/get-started/locally/
+    - cudatoolkit>=11
+    # Current stable release on conda
+    - pytorch
+    - pytorch-cuda>=11
+    # HuggingFace items
+    - torchaudio
+    - torchvision
+    - transformers
+    - datasets
+    - pip
+    - pip:
+      - medspacy==1.1.5
+      # https://github.com/huggingface/setfit
+      - setfit
+      - evaluate
+ 
