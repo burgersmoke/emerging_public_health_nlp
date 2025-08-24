@@ -1,0 +1,343 @@
+{
+    "context_rules": [
+        {
+            "max_targets": null,
+            "excluded_types": null,
+            "metadata": null,
+            "max_scope": null,
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "contacted",
+                            "phoned",
+                            "called"
+                        ]
+                    }
+                }
+            ],
+            "literal": "contacted",
+            "direction": "BIDIRECTIONAL",
+            "category": "AFFIRMED_COMMUNICATION",
+            "allowed_types": null
+        },
+        {
+            "max_targets": null,
+            "excluded_types": null,
+            "metadata": null,
+            "max_scope": 8,
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "was",
+                            "been"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "contacted"
+                }
+            ],
+            "literal": "was contacted",
+            "direction": "BIDIRECTIONAL",
+            "category": "AFFIRMED_COMMUNICATION",
+            "allowed_types": null
+        },
+        {
+            "max_targets": null,
+            "excluded_types": null,
+            "metadata": null,
+            "max_scope": 8,
+            "pattern": null,
+            "literal": "notified",
+            "direction": "BIDIRECTIONAL",
+            "category": "AFFIRMED_COMMUNICATION",
+            "allowed_types": null
+        },
+        {
+            "max_targets": null,
+            "excluded_types": null,
+            "metadata": null,
+            "max_scope": 8,
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "communicated",
+                            "confirmed"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "with",
+                            "w",
+                            "w/"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": "/",
+                    "OP": "?"
+                }
+            ],
+            "literal": "communicated with",
+            "direction": "BIDIRECTIONAL",
+            "category": "AFFIRMED_COMMUNICATION",
+            "allowed_types": null
+        },
+        {
+            "max_targets": null,
+            "excluded_types": null,
+            "metadata": null,
+            "max_scope": null,
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "sent",
+                            "faxed"
+                        ]
+                    }
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "to"
+                }
+            ],
+            "literal": "sent to",
+            "direction": "BIDIRECTIONAL",
+            "category": "AFFIRMED_COMMUNICATION",
+            "allowed_types": null
+        },
+        {
+            "max_targets": null,
+            "excluded_types": null,
+            "metadata": null,
+            "max_scope": null,
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "will"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "pick"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": "up"
+                }
+            ],
+            "literal": "will pick up",
+            "direction": "BACKWARD",
+            "category": "AFFIRMED_COMMUNICATION",
+            "allowed_types": null
+        },
+        {
+            "max_targets": null,
+            "excluded_types": null,
+            "metadata": null,
+            "max_scope": 8,
+            "pattern": null,
+            "literal": "sent",
+            "direction": "BIDIRECTIONAL",
+            "category": "AFFIRMED_COMMUNICATION",
+            "allowed_types": null
+        },
+        {
+            "max_targets": null,
+            "excluded_types": null,
+            "metadata": null,
+            "max_scope": 8,
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "case",
+                            "disease",
+                            "information"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "talked",
+                            "spoke",
+                            "communicated",
+                            "reported",
+                            "faxed",
+                            "obtained"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "with",
+                            "to",
+                            "by"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ],
+            "literal": "spoke with",
+            "direction": "BIDIRECTIONAL",
+            "category": "AFFIRMED_COMMUNICATION",
+            "allowed_types": null
+        },
+        {
+            "max_targets": null,
+            "excluded_types": null,
+            "metadata": null,
+            "max_scope": 8,
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "case",
+                            "disease",
+                            "information"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "discussed",
+                            "advised"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "with",
+                            "to",
+                            "by"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ],
+            "literal": "discussed",
+            "direction": "FORWARD",
+            "category": "AFFIRMED_COMMUNICATION",
+            "allowed_types": null
+        },
+        {
+            "max_targets": null,
+            "excluded_types": null,
+            "metadata": null,
+            "max_scope": null,
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "after"
+                        ]
+                    }
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "talking",
+                            "speaking",
+                            "communicating",
+                            "reporting",
+                            "discussion"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "with",
+                            "to"
+                        ]
+                    }
+                }
+            ],
+            "literal": "after speaking with",
+            "direction": "BIDIRECTIONAL",
+            "category": "AFFIRMED_COMMUNICATION",
+            "allowed_types": null
+        },
+        {
+            "max_targets": null,
+            "excluded_types": null,
+            "metadata": null,
+            "max_scope": null,
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "made"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "arrangements",
+                            "plans"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "with",
+                            "to",
+                            "through",
+                            "via"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ],
+            "literal": "spoke with",
+            "direction": "BIDIRECTIONAL",
+            "category": "AFFIRMED_COMMUNICATION",
+            "allowed_types": null
+        },
+        {
+            "max_targets": null,
+            "excluded_types": null,
+            "metadata": null,
+            "max_scope": 8,
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "consulted"
+                    }
+                },
+                {
+                    "LOWER": "with",
+                    "OP": "?"
+                }
+            ],
+            "literal": "consulted",
+            "direction": "BIDIRECTIONAL",
+            "category": "AFFIRMED_COMMUNICATION",
+            "allowed_types": null
+        }
+    ]
+}

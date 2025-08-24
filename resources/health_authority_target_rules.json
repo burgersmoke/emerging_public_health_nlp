@@ -1,0 +1,280 @@
+{
+    "target_rules": [
+        {
+            "pattern": [
+                {
+                    "IS_TITLE": true,
+                    "POS": "PROPN",
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "local",
+                            "state",
+                            "city",
+                            "county",
+                            "public"
+                        ]
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "health"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "dept",
+                            "depts",
+                            "deptsdepartment",
+                            "department",
+                            "departments"
+                        ]
+                    }
+                }
+            ],
+            "metadata": null,
+            "category": "PUBLIC_HEALTH_AUTHORITY",
+            "literal": "[{'LOWER': {'IN': ['local', 'state', 'city', 'county', 'public']}, 'OP': '?'}, {'LOWER': 'health'}, {'LOWER': {'IN': ['dept', 'deptsdepartment', 'departments']}}]",
+            "attributes": null
+        },
+        {
+            "pattern": [
+                {
+                    "IS_TITLE": true,
+                    "POS": "PROPN",
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "local",
+                            "state",
+                            "city",
+                            "county",
+                            "public"
+                        ]
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "dept",
+                            "dept.",
+                            "depts",
+                            "deptsdepartment",
+                            "department",
+                            "departments"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "."
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "of"
+                },
+                {
+                    "LOWER": "health"
+                }
+            ],
+            "metadata": null,
+            "category": "PUBLIC_HEALTH_AUTHORITY",
+            "literal": "department of health",
+            "attributes": null
+        },
+        {
+            "pattern": [
+                {
+                    "IS_TITLE": true,
+                    "POS": "PROPN",
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "local",
+                            "state",
+                            "city",
+                            "county",
+                            "public"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": "public"
+                },
+                {
+                    "LOWER": "health"
+                }
+            ],
+            "metadata": null,
+            "category": "PUBLIC_HEALTH_AUTHORITY",
+            "literal": "department of health",
+            "attributes": null
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "doh"
+                }
+            ],
+            "metadata": null,
+            "category": "PUBLIC_HEALTH_AUTHORITY",
+            "literal": "DOH",
+            "attributes": null
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "cdc"
+                }
+            ],
+            "metadata": null,
+            "category": "PUBLIC_HEALTH_AUTHORITY",
+            "literal": "[{'LOWER': 'cdc'}]",
+            "attributes": null
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "center",
+                            "centers"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": "for"
+                },
+                {
+                    "LOWER": "disease"
+                },
+                {
+                    "LOWER": "control"
+                }
+            ],
+            "metadata": null,
+            "category": "PUBLIC_HEALTH_AUTHORITY",
+            "literal": "[{'LOWER': 'centers'}, {'LOWER': 'for'}, {'LOWER': 'disease'}, {'LOWER': 'control'}]",
+            "attributes": null
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "infectious",
+                            "infection"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "disease",
+                            "diseases"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "chief",
+                            "director",
+                            "fellow"
+                        ]
+                    }
+                }
+            ],
+            "metadata": null,
+            "category": "INTERNAL_HEALTH_AUTHORITY",
+            "literal": "infectious disease chief",
+            "attributes": null
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "va"
+                        ]
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "chief",
+                            "director",
+                            "fellow"
+                        ]
+                    }
+                }
+            ],
+            "metadata": null,
+            "category": "INTERNAL_HEALTH_AUTHORITY",
+            "literal": "ID Director",
+            "attributes": null
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "va"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "id"
+                        ]
+                    }
+                }
+            ],
+            "metadata": null,
+            "category": "INTERNAL_HEALTH_AUTHORITY",
+            "literal": "va id",
+            "attributes": null
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "infection"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "prevention"
+                        ]
+                    }
+                }
+            ],
+            "metadata": null,
+            "category": "INTERNAL_HEALTH_AUTHORITY",
+            "literal": "infection prevention",
+            "attributes": null
+        }
+    ]
+}
