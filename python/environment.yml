@@ -21,7 +21,6 @@ dependencies:
     # This is the CUDA for the stable pytorch as of 8/2022 (i.e. 1.6.0)
     # https://pytorch.org/get-started/locally/
     - cudatoolkit>=11
-    # Current stable release on conda
     - pytorch
     - pytorch-cuda>=11
     # HuggingFace items
