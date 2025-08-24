@@ -28,6 +28,8 @@ dependencies:
     - torchvision
     - transformers
     - datasets
+    # for hyperparameter search
+    - optuna
     - pip
     - pip:
       - medspacy==1.1.5
