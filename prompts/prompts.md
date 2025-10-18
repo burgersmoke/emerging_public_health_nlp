@@ -15,3 +15,5 @@ Provide example sentences that could be found in a clinical document where the p
 Prompt #2 and #3 were used verbatim as shown above.
 
 Prompt #1 varied only by a user adding an example sentence and getting responses to review and add to training data.
+
+Examples of some of these sentences can be seen in ../data/animal_exposure_sentences.py and ../data/other_exposure_sentences.py
