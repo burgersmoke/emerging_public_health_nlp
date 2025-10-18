@@ -1,6 +1,6 @@
 Two of the capabilities in this work (Zoonotic Exposures and Other Pathogen exposures) used a LLM (ChatGPT 4).
 
-The prompts used for these were directly entered into the web interface for ChatGPT where no Python code was used.  The prompts for these were comprised of three total varations:
+None of the generation parameters were changed as these prompts were directly manually into the web interface for ChatGPT.  This was all manual with no  code used.  The prompts for these were comprised of three total varations:
 
 Prompt #1:
 Write 50 more sentences similar to this one:
