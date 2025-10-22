@@ -13,7 +13,10 @@ project
 │   
 └───prompts
 │   │   prompts.md - Examples and methods for all 3 prompt types used for synthetic data generation
-│   
+│
+└───python
+│   │   animal_exposure__evaluation.ipynb - Notebook showing how the SetFit model for animal exposures was trained
+│   │   environment.yml - Anaconda environment file definining packages for these notebooks
 └───resources
     │   health_authority_target_rules.json - Medspacy resource defining "targets" (aka entities) of Public Health Authorities for the rule-based Public Health Authority Communication capability
     |   health_authority_context_rules.json - Medspacy resource defining context rules which classify attributes for entities (e.g. "AFFIRMED_COMMUNICATION")
