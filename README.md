@@ -1,5 +1,5 @@
 # Overview
-This repository contains resources, notebooks, and example data for reproducing results in the paper "Identifying Early Signals from Emerging Public Health Events Using Natural Language Processing"
+This repository contains resources, notebooks, prompt examples, and example data for reproducing results in the paper "Identifying Early Signals from Emerging Public Health Events Using Natural Language Processing"
 
 # Contents
 
